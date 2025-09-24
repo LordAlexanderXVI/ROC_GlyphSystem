@@ -1,0 +1,61 @@
+{
+    "tomes": [
+        {
+            "id": "waking-dream",
+            "name": "Tome of the Waking Dream",
+            "philosophy": "A discipline of debuff and control that manipulates a target's perception, using illusions and psychological assaults.",
+            "coreMechanic": {
+                "name": "Primer & Payload",
+                "description": "This Tome's strategy revolves around applying the `Grasped` \"primer\" condition. Grasped (Condition): For each stack, a creature's speed is reduced by 5 feet. When speed is reduced to 0 or less, it becomes `Immobilized` until the end of the Weaver's next turn. At that time, the `Immobilized` condition ends, and all stacks of `Grasped` are removed."
+            },
+            "coreFoundations": [
+                { "name": "Phantasmal Strike", "type": "Foundation", "tier": 0, "diceCost": "1 Dice", "description": "Deals `[damage:Success x1]` psychic damage to `[target:1 creature]` within `[range:30 feet]`." },
+                { "name": "Mind Grasp", "type": "Foundation", "tier": 0, "diceCost": "2 Dice", "description": "Applies `[stacks:Success x1]` of the Grasped condition to `[target:1 creature]` within `[range:30 feet]`." },
+                { "name": "Glyph of Delusion", "type": "Foundation", "tier": 0, "diceCost": "1 Dice", "description": "Creates a minor illusion within `[range:30 feet]` for a `[duration:1 minute]`. Affects `[senses:sight and sound]`." },
+                { "name": "Glyph of Whispers", "type": "Rote", "tier": 0, "lockCost": "1 Lock", "description": "Transmit a `[message:one sentence]` telepathically to a creature you can see." }
+            ],
+            "purchasableGlyphs": [
+                { "name": "Glyph of Distraction", "tier": 1, "type": "Modifier", "diceCost": "+1 Dice", "description": "If this incantation successfully affects a target, it also has `[penalty:Disadvantage]` on its next skill check." },
+                { "name": "Glyph of Extended Range", "tier": 1, "type": "Modifier", "diceCost": "+0 Dice", "description": "The `[range]` of this incantation is doubled." },
+                { "name": "Glyph of the Lingering Touch", "tier": 2, "type": "Modifier", "diceCost": "+1 Dice", "description": "If this incantation successfully applies a condition, it also applies 1 stack of the Grasped condition." }
+            ]
+        },
+        {
+            "id": "broken-law",
+            "name": "Tome of the Broken Law",
+            "philosophy": "A discipline of volatility and high risk/high reward that channels raw elemental power by bending the broken laws of reality.",
+            "coreMechanic": {
+                "name": "Arcane Overcharge",
+                "description": "After rolling, a Weaver can **Shatter** one successful die. A Shattered die is removed from the Dice Pool until a Long Rest, but it contributes **double its successes** to the spell's effect."
+            },
+            "coreFoundations": [
+                { "name": "Force Bolt", "type": "Foundation", "tier": 0, "diceCost": "1 Dice", "description": "Deals `[damage:Success x2]` force damage to `[target:1 creature]` within `[range:60 feet]`." },
+                { "name": "Unravel", "type": "Foundation", "tier": 0, "diceCost": "1 Dice", "description": "Deals `[damage:Success x1]` force damage to `[target:1 creature or object]`. If **Overcharged**, this spell ignores damage resistances." },
+                { "name": "Glyph of Mending Matter", "type": "Rote", "tier": 0, "lockCost": "1 Lock", "description": "You touch and repair a single break up to `[area:1 foot]` in length in a non-magical `[target:object]`." }
+            ],
+            "purchasableGlyphs": [
+                 { "name": "Glyph of Elemental Chaos", "tier": 1, "type": "Modifier", "diceCost": "+0 Dice", "description": "This incantation's `[damage]` becomes `[damage_type:fire, cold, or lightning]`. If **Overcharged**, it also applies a corresponding elemental condition." },
+                 { "name": "Glyph of Light", "tier": 1, "type": "Rote", "lockCost": "1 Lock", "description": "Creates a floating sphere of light that illuminates a `[area:20-foot radius]` for `[duration:1 hour]`." }
+            ]
+        },
+        {
+            "id": "weavers-hand",
+            "name": "Tome of the Weaver's Hand",
+            "philosophy": "A discipline of connection and proactive support that weaves protective and empowering energy directly into allies.",
+            "coreMechanic": {
+                "name": "Aura of the Loom",
+                "description": "The Weaver first establishes a **`Weaver's Bond`** on allies for free. They can then Weave persistent `Modifier` Glyphs, applying them to a single target for its base Lock Cost, or to all Bonded allies for a cost of `base cost x # of allies`."
+            },
+            "coreFoundations": [
+                { "name": "Mending Touch", "type": "Foundation", "tier": 0, "diceCost": "2 Dice", "description": "`[target:1 ally]` regains `[heal:Success x2]` Hit Points." },
+                { "name": "Shielding Light", "type": "Foundation", "tier": 0, "diceCost": "1 Dice", "description": "`[target:1 ally]` gains `[health:Success x3]` in temporary Hit Points for a `[duration:1 minute]`." },
+                { "name": "Glyph of Weaver's Bond", "type": "Rote", "tier": 0, "lockCost": "0 Lock", "description": "As a Limited Action, establish a **Bond** with any number of `[target:touched allies]`." }
+            ],
+            "purchasableGlyphs": [
+                { "name": "Modifier of Stone's Resilience", "tier": 1, "type": "Modifier", "lockCost": "1 Lock", "description": "The affected ally gains `[bonus:Advantage]` on checks to resist being moved or knocked prone. (This is a persistent buff)." },
+                { "name": "Glyph of Guidance", "tier": 1, "type": "Rote", "lockCost": "1 Lock", "description": "`[target:1 ally]` gains `[bonus:Advantage]` on their next skill check within the next minute." }
+            ]
+        }
+    ]
+}
+
